@@ -1,0 +1,39 @@
+{
+  "name": "joshua060198/nova-simple-status-with-enum",
+  "description": "Simple status field for Laravel Nova",
+  "keywords": [
+    "status",
+    "badge",
+    "enum"
+  ],
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Joshua Lauwrich Nandy",
+      "email": "joshua.lauwrich.98@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=7.1.0",
+    "bensampo/laravel-enum": "2.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Joshua060198\\NovaSimpleStatusWithEnum\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Joshua060198\\NovaSimpleStatusWithEnum\\FieldServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
