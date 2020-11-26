@@ -22,6 +22,6 @@ class StatusForm extends Enum
     {
         parent::__construct(is_null($name) ? 'Status' : $name, is_null($attribute) ? 'status' : $attribute, $resolveCallback);
 
-        $this->attachEnum($class)->onlyOnForms()->required()->default(($class::getValues())[0]);
+        $this->attachEnum($class)->onlyOnForms()->required();
     }
 }

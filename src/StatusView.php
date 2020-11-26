@@ -27,8 +27,8 @@ class StatusView extends Badge
             return $result;
         });
 
-        if (property_exists($class, 'mappedStatus')) {
-            $this->types = $class::$mappedStatus;
+        if (method_exists($class, 'getMappedStatus')) {
+            $this->types = $class::getMappedStatus();
         }
 
         $this->exceptOnForms();
